@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>HTML Page</title>
+</head>
+
+<body>
+    <header id="headerItem">
+        Old Header
+    </header>
+    <section>
+        <button onclick="clickHandler()">Click Here</button>
+    </section>
+    <script type="text/javascript">
+        var sum = 0;
+        var numbers = [4, 9, 16, 25];
+        function increment(item, index) {
+            sum += item;
+        }
+        numbers.forEach(increment);
+        alert(sum);
+
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        alert(day);
+    </script>
+</body>
+
+</html>
